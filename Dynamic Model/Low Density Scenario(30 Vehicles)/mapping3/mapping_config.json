@@ -1,0 +1,51 @@
+{
+		"vehicles":[
+		{
+			"startingTime":0.0,
+			"route":"1",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":0.0,
+			"route":"2",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":15.0,
+			"route":"1",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":15.0,
+			"route":"2",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":30.0,
+			"route":"1",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":30.0,
+			"route":"2",
+			"maxNumberVehicles":5,
+			"types":[{"name":"PKW"}]
+		}
+		 ]
+}
+
+
+
