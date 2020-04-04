@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://www.dcaiti.tu-berlin.de/research/simulation/download/get/scenarios/scenarioname/visualizer/visualizer_config.xsd">
+
+<visualizer id ="fileVisualizer" enabled="true" update="1" start="2" end="6" loader="com.dcaiti.vsimrti.fed.visualizer.FileVisualizerConfig">
+	 <filename>HighDensityScenario.csv</filename>
+         <directory>.</directory>
+         <separator>;</separator>
+	<messages>
+        	<message id ="VehicleMovements" enabled="true">
+			<entries>
+				<entry>"MOVE_VEHICLE"</entry>
+				<entry> Time </entry>
+				<entry> Updated:Name </entry>
+				<entry> Updated:Speed </entry>
+				<entry> Updated:Position.Latitude </entry >
+				<entry> Updated:Position.Longitude </entry >
+				<entry> Updated:VehicleEmissions.CurrentEmissions.Co2</entry>
+				<entry> Updated:VehicleEmissions.AllEmissions.Co2 </entry>
+			</entries>
+		</message>
+		<message id="ChangeSpeed">
+               		 <entries>
+                    		<entry>"CHANGE_SPEED"</entry>
+                    		<entry>Time</entry>
+                    		<entry>VehicleId</entry>
+                    		<entry>Type</entry>
+                    		<entry>Speed</entry>
+                    		<entry>Interval</entry>
+                    		<entry>Acceleration</entry>
+                	</entries>
+           	</message>
+		<message id="SendV2XMessage">
+                	<entries>
+                    		<entry>"SEND_MESSAGE"</entry>
+                    		<entry>Time</entry>
+                    		<entry>Type</entry>
+                    		<entry>MessageId</entry>
+                    		<entry>SourceName</entry>
+                    		<entry>SourcePosition.Latitude</entry>
+                    		<entry>SourcePosition.Longitude</entry>
+                    		<entry>SourcePosition.Elevation</entry>
+                    		<entry>Message.Routing.DestinationAddressContainer.Type</entry>
+                    		<entry>Message.Routing.DestinationAddressContainer.DestinationAddress.IPv4Address</entry>
+                    		<entry>Message.Routing.DestinationAddressContainer.ChannelId</entry>
+                	</entries>
+            	</message>
+		<message id="ReceiveV2XMessage">
+                	<entries>
+                   	 	<entry>"RECV_MESSAGE"</entry>
+                    		<entry>Time</entry>
+                    		<entry>Type</entry>
+                    		<entry>MessageId</entry>
+                    		<entry>ReceiverName</entry>
+                    		<entry>ReceiverInformation.ReceiveSignalStrength</entry>
+                	</entries>
+            	</message>
+	</messages>
+ </visualizer>
+
+	<visualizer id="websocket" enabled="true" loader="com.dcaiti.vsimrti.fed.visualizer.WebsocketVisualizerConfig">
+        	<synchronized>true</synchronized>
+        	<port>8000</port> 
+        	<messages>
+            		<message id="VehicleMovements" enabled="true"/>
+            		<message id="ReceiveV2XMessage" enabled="true"/>
+            		<message id="SendV2XMessage" enabled="true"/>
+            		<message id="AddedVehicle" enabled="true"/>
+       		 </messages>
+    	</visualizer>
+ </configuration>
+
