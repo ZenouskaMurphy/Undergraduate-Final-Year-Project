@@ -1,0 +1,125 @@
+{
+		"vehicles":[
+		{
+			"startingTime":0.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":0.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":5.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":5.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":10.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":10.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":15.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":15.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":20.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		
+		{
+			"startingTime":20.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":25.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":25.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":30.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":30.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":35.0,
+			"route":"1",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		},
+
+		{
+			"startingTime":35.0,
+			"route":"2",
+			"maxNumberVehicles":10,
+			"types":[{"name":"PKW"}]
+		}
+		 ]
+}
+
+
+
