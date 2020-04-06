@@ -41,7 +41,6 @@ SpeedLeftLeadingNeighboursR001 = 0
 SpeedRightLeadingNeighboursR001 = 0
 SJNR001 = 0
 NextStepR001 = 0
-Newlist = []
 
 # si = current vehicle
 # sj = next vehicle
